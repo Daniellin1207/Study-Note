@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/SENSETIME/linyili/Documents/Test/http.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+curl/curl.h
+-
+curl/easy.h
+-
+string
+-
+
+/home/SENSETIME/linyili/Documents/Test/main.cc
+stdio.h
+-
+string.h
+-
+time.h
+-
+iostream
+-
+http.h
+/home/SENSETIME/linyili/Documents/Test/http.h
+
