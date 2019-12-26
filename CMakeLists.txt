@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 3.4)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_BUILD_TYPE DEBUG)
 project(Demo)
-add_library(main1 SHARED main.cc)
+# add_library(main1 SHARED main.cc)
 # set_target_properties(main1 main)
-add_executable(main main.cc)
+add_executable(main main.cc )
 
 # cmake_minimum_required(VERSION 3.4)
 # project(Demo)
