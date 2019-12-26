@@ -1,5 +1,9 @@
+
 enum GameStatus{
+    GamePrepare,
     GameStart,
+    GameGoing,
+    GamePause,
     GameEnd
 };
 enum PlayerNums{
