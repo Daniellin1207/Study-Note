@@ -11,5 +11,8 @@ int main(){
   cout<<"a: "<<a<<" b: "<<b<<endl;
   cout<<"sum: "<<Add(a,b)<<endl;
   cout<<"multi: "<<Multi(a,b)<<endl;
+  cout<<"Test Git User Name"<<endl;
+  cout<<"Test Git User Name Twice"<<endl;
+  cout<<"Test Git User Name Third"<<endl;
   return 0;
 }
