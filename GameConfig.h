@@ -1,12 +1,22 @@
 
-enum GameStatus{
+// add class as strong enum
+
+#ifndef _GAMECONFIG_H
+#define _GAMECONFIG_H
+
+// #include <tuple>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+enum class GameStatus{
     GamePrepare,
     GameStart,
     GameGoing,
     GamePause,
-    GameEnd
+    GameEnd,
+    GameWholeEnd
 };
-enum PlayerNums{
+enum class PlayerNums{
     Player1,
     Player2,
     Player3,
@@ -16,3 +26,8 @@ enum PlayerNums{
     Player7,
     Player8,
 };
+
+static bool GlobalNetworkConnected=false;
+
+
+#endif

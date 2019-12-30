@@ -1,23 +1,25 @@
 #include <iostream>
 #include <string>
+#include "Math/UtilMath.cc"
 class Player{
 public:
-    Player(int roomId):_room_id(roomId){};
+    Player(){};
+    Player(int roomId):_room_id(roomId){PlayerInit();};
     ~Player(){};
     void PlayerInit(){
-        srand((int)time(NULL));
-        int range=1000;
-        _id=rand()%range+10000;
-        _pos_id=rand()%10;
+        _id=UTIL::GetRandInt(1,1000)+10000;
+        _pos_id=UTIL::GetRandInt(1,10);;
     };
     int Id(){return _id;};
     int InputNum(){ // 判断是否是数字 如果是数字则进行大小判断。
+        ClearInputNum();
         while(std::cin>>_tmp_input)
         {
             if(_IsNum(_tmp_input)) return _TransNum(_tmp_input);
             std::cout<<"please input num without logo:\n";
         };
     };
+    void ClearInputNum(){_tmp_input="";_now_input_num=0;};
     int NowInputNum(){return _now_input_num;};
     int WinNum(){return _win_num;};
     int PosId(){return _pos_id;};
