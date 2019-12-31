@@ -20,6 +20,7 @@ template<typename T,typename U>
 auto Num<T,U>::hello(T a,U b)->decltype(a+b){
     return a+b;
 }
+// test user.email
 // float Num<T,U>::hello(T a,U b){
 //     return a+b;
 // }
