@@ -29,3 +29,29 @@
 10.VsCode中配置指定的python版本，在Preferences=>Setting=>搜索python.pythonPath。将python的版本路径更新在此处。
 11.python调用so动态库，见图片.
 12.cmake多级载入，见图片.
+13.微信小程序开发教程地址:https://developers.weixin.qq.com/minigame/dev/guide/
+14.
+
+ 1206  git pull
+ 1207  git revert
+ 1208  git revert .
+ 1209  git reset
+ 1210  git reset -f
+ 1211  git reset --hard
+ 1212  docker
+ 1213  sudo apt install docker.io
+ 1214  docker
+ 1215  docker pull centos
+ 1216  sudo docker pull centos
+ 1217  docker ps -a
+ 1218  sudo docker ps -a
+ 1219  sudo docker run -it centos:latest /bin/bash
+ 1220  sudo docker ps -a
+ 1221  sudo docker commit ac centos:linyili
+ 1222  sudo docker ps -a
+ 1223  sudo docker ps images
+ 1224  sudo docker images
+ 1225  sudo docker save centos:linyili >  hello.tar.gz
+ 1226  sudo docker load <  hello.tar.gz
+ 1227  sudo docker run -it centos:linyili /bin/bash
+ 1228  history
