@@ -2,8 +2,8 @@
 using namespace std;
 #include <tuple>
 #include <vector>
-#include "GameInit.h"
-#include "GameConfig.h"
+#include "GameDesign/GameInit.h"
+#include "GameDesign/GameConfig.h"
 
 int main(){
   unsigned int player_num=1, games_num=1;

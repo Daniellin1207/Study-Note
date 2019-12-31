@@ -12,7 +12,7 @@ public:
         _room_id=GenerateRoomId();
         for (int i = 0; i < players_num; i++)
         {
-            Player *player=new Player(_room_id);
+            Player *player=new Player(_room_id,i+1);
             this->PushPlayer(player);
         }
         

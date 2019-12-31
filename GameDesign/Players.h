@@ -1,14 +1,14 @@
 #include <iostream>
 #include <string>
-#include "Math/UtilMath.cc"
+#include "../UtilsDesign/UtilMath.cc"
 class Player{
 public:
-    Player(){};
-    Player(int roomId):_room_id(roomId){PlayerInit();};
+    Player(unsigned int roomId):_room_id(roomId){PlayerInit();};
+    Player(unsigned int roomId,unsigned int posId):_room_id(roomId),_pos_id(posId){PlayerInit();};
     ~Player(){};
     void PlayerInit(){
         _id=UTIL::GetRandInt(1,1000)+10000;
-        _pos_id=UTIL::GetRandInt(1,10);;
+        // _pos_id=UTIL::GetRandInt(1,10);;
     };
     int Id(){return _id;};
     int InputNum(){ // 判断是否是数字 如果是数字则进行大小判断。
