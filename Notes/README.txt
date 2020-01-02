@@ -30,28 +30,26 @@
 11.python调用so动态库，见图片.
 12.cmake多级载入，见图片.
 13.微信小程序开发教程地址:https://developers.weixin.qq.com/minigame/dev/guide/
-14.
-
- 1206  git pull
- 1207  git revert
- 1208  git revert .
- 1209  git reset
- 1210  git reset -f
- 1211  git reset --hard
- 1212  docker
- 1213  sudo apt install docker.io
- 1214  docker
- 1215  docker pull centos
- 1216  sudo docker pull centos
- 1217  docker ps -a
- 1218  sudo docker ps -a
- 1219  sudo docker run -it centos:latest /bin/bash
- 1220  sudo docker ps -a
- 1221  sudo docker commit ac centos:linyili
- 1222  sudo docker ps -a
- 1223  sudo docker ps images
- 1224  sudo docker images
- 1225  sudo docker save centos:linyili >  hello.tar.gz
- 1226  sudo docker load <  hello.tar.gz
- 1227  sudo docker run -it centos:linyili /bin/bash
- 1228  history
+14.Android:Local.properties文件被默认更改了，因为本地的sdk路径与ndk路径发生了变化。因此需要对应得更改到正确的路径下。但是默认只更改了sdk的路径，所以还要找到ndk的路径进行更改。
+15.Android:在vsCode中使用cmake编译成可执行文件后进行调试。而cmake最简单的语句就是设置cmake的版本（用什么），将什么文件制作到哪里（干什么）。语句分别为：
+  cmake_minimum_required(VERSION 3.4)
+  add_executable(Demo2 TestGcc.cc)
+14.docker使用,一般都需要管理员权限
+  a.从远端拉下需要的环境：
+    sudo docker pull centos
+  b.查看当前所有的docker进程：
+    sudo docker ps -a
+  c.运行docker，进入docker环境，最后的/bin/bash应该是固定的：
+    sudo docker run -it centos:latest /bin/bash
+  d.退出docker环境后，在本地提交环境中的修改到重命名的作者或者版本，其中ac是之前修改的docker环境的id，在ps -a中查询：
+    sudo docker commit ac centos:linyili
+  e.查看docker中的所有镜像：
+    sudo docker images
+  f.将docker打包，其中箭头是必要的：
+    sudo docker save centos:linyili >  hello.tar.gz
+  g.将打包好的文件发送到其他计算机后，根据该压缩包载入该docker环境：
+    sudo docker load <  hello.tar.gz
+  h.重新运行指定的环境：
+    sudo docker run -it centos:linyili /bin/bash
+  i.查看之前的指令：
+    history
