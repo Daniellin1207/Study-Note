@@ -34,7 +34,7 @@
 15.Android:在vsCode中使用cmake编译成可执行文件后进行调试。而cmake最简单的语句就是设置cmake的版本（用什么），将什么文件制作到哪里（干什么）。语句分别为：
   cmake_minimum_required(VERSION 3.4)
   add_executable(Demo2 TestGcc.cc)
-14.docker使用,一般都需要管理员权限
+16.docker使用,一般都需要管理员权限
   a.从远端拉下需要的环境：
     sudo docker pull centos
   b.查看当前所有的docker进程：
@@ -53,3 +53,9 @@
     sudo docker run -it centos:linyili /bin/bash
   i.查看之前的指令：
     history
+17.opencv下载好后，进行cmake编译，make以及make install，具体指令如下：
+  mkdir build
+  cd build
+  cmake ..
+  make -j8
+  sudo make install
