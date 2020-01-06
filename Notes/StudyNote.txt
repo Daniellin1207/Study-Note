@@ -59,3 +59,8 @@
   cmake ..
   make -j8
   sudo make install
+18.对cmake中如何配置第三方库的讲解：
+  https://blog.csdn.net/ly890700/article/details/72808426
+  include_directories(${INC_DIR})  //加载了include的文件夹
+  link_directories(${LINK_DIR})    //加载了lib的文件夹
+  target_link_libraries(test_boost boost_filesystem boost_system) //加载了具体的lib文件到test_boost项目中
