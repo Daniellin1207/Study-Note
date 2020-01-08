@@ -65,11 +65,25 @@
 18. 对cmake中如何配置第三方库的讲解：  
   https://blog.csdn.net/ly890700/article/details/72808426  
   include_directories(${INC_DIR})  //加载了include的文件夹  
-  link_directories(${LINK_DIR})    //加载了lib的文件夹  target_link_libraries(test_boost boost_filesystem    boost_system) //加载了具体的lib文件到test_boost项目中  
+  link_directories(${LINK_DIR})    //加载了lib的文件夹  
+  target_link_libraries(test_boost boost_filesystem    boost_system) //加载了具体的lib文件到test_boost项目中  
 19. Linux系统间传输文件使用scp指令，如：  
   - 将文件filename传输到1.1.1.1地址下的linyili用户的/home/Documents位置  
   **scp filename linyili@1.1.1.1:~/Documents**  
   - 将文件夹dirname传输到1.1.1.1地址下的linyili用户的/usr/Documents位置  
   **scp -r dirname linyili@1.1.1.1:/Documents**
 20. 获取本地的IP地址，可在终端中使用 **ifconfig**  
-  
+21. GDB的入门博客：https://www.jianshu.com/p/30ffc01380a0  
+22. g++/gcc使用第三方库:  
+  https://blog.csdn.net/arackethis/article/details/43342655  
+  分别使用-I是include，-L对应link的文件夹，-l对应link的动态库的文件名。  
+  这对Cmake的编写学习应该有指导意义。
+23. 打开glfw的演示，证明glfw已经安装成功:  
+  https://blog.csdn.net/xyh930929/article/details/83745958
+24. 在linux环境编译应用程式或lib的source code时常常会出现如下   的错误讯息：
+  **/usr/bin/ld: cannot find -lxxx**  
+  参考博客:  https://www.jianshu.com/p/ccaf688f54c0  
+  此次遇到的是-lGL没找到，其实是该路径下命名成了libGL.so.1，设置快捷方式：  
+  **sudo ln -s libGL.so.1 libGL.so**  
+  注意GL都要大写。
+25. 
