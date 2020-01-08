@@ -66,3 +66,10 @@
   https://blog.csdn.net/ly890700/article/details/72808426  
   include_directories(${INC_DIR})  //加载了include的文件夹  
   link_directories(${LINK_DIR})    //加载了lib的文件夹  target_link_libraries(test_boost boost_filesystem    boost_system) //加载了具体的lib文件到test_boost项目中  
+19. Linux系统间传输文件使用scp指令，如：  
+  - 将文件filename传输到1.1.1.1地址下的linyili用户的/home/Documents位置  
+  **scp filename linyili@1.1.1.1:~/Documents**  
+  - 将文件夹dirname传输到1.1.1.1地址下的linyili用户的/usr/Documents位置  
+  **scp -r dirname linyili@1.1.1.1:/Documents**
+20. 获取本地的IP地址，可在终端中使用 **ifconfig**  
+  
