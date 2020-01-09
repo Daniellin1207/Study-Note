@@ -2,9 +2,9 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 
-#include <glm/glm.hpp>
+// #include <glm/glm.hpp>
 #include <iostream>
-using namespace glm;
+// using namespace glm;
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 

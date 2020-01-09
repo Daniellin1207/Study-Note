@@ -86,4 +86,7 @@
   此次遇到的是-lGL没找到，其实是该路径下命名成了libGL.so.1，设置快捷方式：  
   **sudo ln -s libGL.so.1 libGL.so**  
   注意GL都要大写。
-25. 
+25. 在mac中配置OpenGL与在Ubuntu中有差别，Mac版本的见博客：  
+  https://blog.csdn.net/sunlin972913894/article/details/102614673  
+  在find_package中为OpenGL REQUIRED, 而在地址中均为大写，如：
+  **OPENGL_INCLUDE_DIR** , **OPENGL_LIBRARY_DIR**
