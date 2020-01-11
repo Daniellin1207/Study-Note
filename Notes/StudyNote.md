@@ -90,3 +90,7 @@
   https://blog.csdn.net/sunlin972913894/article/details/102614673  
   在find_package中为**OpenGL REQUIRED**, 而在地址中均为大写，如：
   **OPENGL_INCLUDE_DIR** , **OPENGL_LIBRARY_DIR**
+26. Vscode插件配置  
+  Gist ID: e20ea4364ab43c47d3920b3b76ceaa5b  
+  Token: bbeadf3d2a5b0323f76ead5460e1f87fe17fad2f  
+  :alien:

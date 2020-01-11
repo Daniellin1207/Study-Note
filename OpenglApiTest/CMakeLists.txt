@@ -1,4 +1,3 @@
-
 # Version Ubuntu
 
 # project(main)
@@ -27,6 +26,7 @@ find_package(OpenGL REQUIRED)
 if(OpenGL_FOUND)
     Message("Found Opengl")
     Message(${OPENGL_LIBRARIES})
+    Message(${OPENGL_INCLUDE_DIR})
     include_directories(${OPENGL_INCLUDE_DIR})
     link_directories(${OPENGL_LIBRARY_DIR})
     # add_definitions(${OpenGL_DEFINITIONS})
