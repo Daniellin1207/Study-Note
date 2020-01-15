@@ -15,3 +15,5 @@ https://ldc2.layabox.com/doc/?language=zh&nav=zh-ts-0-3-0
     这样可以使用Text代替Laya.Text了。
 7. 在Chrome中调试时会遇到跨域的问题，可以通过在终端中指令：
 **open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-data-dir = /Users/daniel/Applications/Google**
+8. 根据layabox官方教程，在使用硬件设备如陀螺仪时会出现instance undefined等问题，是因为缺少库包。加载自带的库包方法：  
+***编辑模式=>文件=>项目设置=>类库设置=>勾选laya.device.js=>确定即可。***
