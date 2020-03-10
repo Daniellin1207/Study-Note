@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.4)
+set(CMAKE_CXX_STANDARD 11)
+# set(CMAKE_BUILD_TYPE DEBUG)
+project(Demo)
+# add_executable(main test.cc)
+add_executable(main1 template_test.cc)
