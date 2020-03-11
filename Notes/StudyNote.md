@@ -80,7 +80,7 @@
   这对Cmake的编写学习应该有指导意义。
 23. 打开glfw的演示，证明glfw已经安装成功:  
   https://blog.csdn.net/xyh930929/article/details/83745958
-24. 在linux环境编译应用程式或lib的source code时常常会出现如下   的错误讯息：
+24. 在linux环境编译应用程式或lib的source code时常常会出现如下的错误讯息：
   **/usr/bin/ld: cannot find -lxxx**  
   参考博客:  https://www.jianshu.com/p/ccaf688f54c0  
   此次遇到的是-lGL没找到，其实是该路径下命名成了libGL.so.1，设置快捷方式：  
@@ -94,3 +94,9 @@
   Gist ID: e20ea4364ab43c47d3920b3b76ceaa5b  
   Token: bbeadf3d2a5b0323f76ead5460e1f87fe17fad2f  
   :alien:
+27. Linux远程访问screen操作：
+  * 开启screen: screen -S screen_name
+  * 退出screen: ctrl+A+D
+  * 关闭screen: screen -S screen_name -X quit
+  * 列取screen: screen -ls
+  * 返回screen: screen -r screen_name
