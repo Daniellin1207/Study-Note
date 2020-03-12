@@ -100,3 +100,5 @@
   * 关闭screen: screen -S screen_name -X quit
   * 列取screen: screen -ls
   * 返回screen: screen -r screen_name
+28. 学习ffmpeg视频音频剪辑工具:
+  * https://www.jianshu.com/p/91727ab25227
