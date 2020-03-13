@@ -101,4 +101,5 @@
   * 列取screen: screen -ls
   * 返回screen: screen -r screen_name
 28. 学习ffmpeg视频音频剪辑工具:
-  * https://www.jianshu.com/p/91727ab25227
+  * https://www.jianshu.com/p/91727ab25227 常用指令
+  * https://www.jianshu.com/p/59da3d350488 gpu加速

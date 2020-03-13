@@ -98,14 +98,26 @@ def smallestcount1(alist, targetvalue):
 
 if __name__ == "__main__":
     print(123)
-    print(smallestcount1([1,5,1,6,7,9], 8))
-    assert smallestcount1([1,5,1,6,7,9], 8) == 0
-    assert smallestcount2([1,5,1,6,7,9], 8) == 1
-    assert smallestcount1([1,5,1,6,7,9], 10) == 2
-    assert smallestcount2([1,5,1,6,7,9], 10) == 2
-    assert smallestcount1([1,5,1,6,7,9], 20) == 3
-    assert smallestcount2([1,5,1,6,7,9], 20) == 3
-    assert smallestcount1([1,5,1,6,7,9], 50) == -1
-    assert smallestcount2([1,5,1,6,7,9], 50) == -1
-    assert smallestcount1([0,0], 50) == -1
-    assert smallestcount2([0,0], 50) == -1
+    # print(smallestcount1([1,5,1,6,7,9], 8))
+    # assert smallestcount1([1,5,1,6,7,9], 8) == 0
+    # assert smallestcount2([1,5,1,6,7,9], 8) == 1
+    # assert smallestcount1([1,5,1,6,7,9], 10) == 2
+    # assert smallestcount2([1,5,1,6,7,9], 10) == 2
+    # assert smallestcount1([1,5,1,6,7,9], 20) == 3
+    # assert smallestcount2([1,5,1,6,7,9], 20) == 3
+    # assert smallestcount1([1,5,1,6,7,9], 50) == -1
+    # assert smallestcount2([1,5,1,6,7,9], 50) == -1
+    # assert smallestcount1([0,0], 50) == -1
+    # assert smallestcount2([0,0], 50) == -1
+    from cv2 import cv2
+    import os
+    import numpy as np
+    # print(os.listdir())
+    img=cv2.imread("out.png")
+    print(img)
+    # cv2.imshow("ima",img)
+    # cv2.show()
+    
+    cv2.imshow("image",img)
+    cv2.waitKey(0)
+    # cv2.show()
