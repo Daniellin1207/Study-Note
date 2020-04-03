@@ -103,3 +103,6 @@
 28. 学习ffmpeg视频音频剪辑工具:
   * https://www.jianshu.com/p/91727ab25227 常用指令
   * https://www.jianshu.com/p/59da3d350488 gpu加速
+29. mathtype-windows过期后通过删除注册文件：
+  * 打开运行->regedit
+  * 删除HKEY_CURRENT_USER/Software/Install Options中的Options6.9
